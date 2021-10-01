@@ -44,7 +44,7 @@ export class TasksService {
       id: uuid(),
       title,
       description,
-      status: TaskStatus.OPEN,
+      status: TaskStatus.OPEN, //test
     };
     this.tasks.push(task);
     return task;
