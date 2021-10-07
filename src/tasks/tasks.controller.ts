@@ -21,7 +21,7 @@ import { AuthGuard } from '@nestjs/passport';
 @UseGuards(AuthGuard())
 export class TasksController {
   constructor(private tasksService: TasksService) {}
-  //Routes definition
+  //Tasks routes definition
   @Get()
   getTasks(@Query() filterDto: GetTasksFilterDto): Promise<Task[]> {
     return this.tasksService.getTasks(filterDto);
